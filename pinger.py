@@ -2,6 +2,7 @@
 #This is for windows only
 import os
 import re
+import sys
 
 def split_units(value): #this function is to slip the time which is in e.g 300(ms) to 300 alone
 
@@ -24,7 +25,10 @@ def pinger():
 	pinger = " " #this empty string is created to refresh the page at intervals
 	file.write(pinger) #this is used to refresh the file
 	file.close() #this is to close it, it is very important when dealing with file=open
-	ping = os.system('ping /n {} {} >> tester.txt'.format(ping_number, ping_input))
+	if sys.platform == 'linux':
+		ping = os.system('ping -c {} {} >> tester.txt'.format(ping_number, ping_input))
+	elif sys.platform == 'win32':
+		ping = os.system('ping /n {} {} >> tester.txt'.format(ping_number, ping_input))
 	#above is the ping statement, it consist of the windows ping command, using the os.system
 	if ping == 0: # Zero is the default message for a successful ping
 		print('\n Ping was successful!!!')

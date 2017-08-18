@@ -1,9 +1,14 @@
- 
-Pinging googlemail.l.google.com [172.217.17.69] with 32 bytes of data:
-Request timed out.
-Reply from 172.217.17.69: bytes=32 time=931ms TTL=50
+ PING google.com (172.217.19.206) 56(84) bytes of data.
+64 bytes from ams16s31-in-f14.1e100.net (172.217.19.206): icmp_seq=1 ttl=51 time=324 ms
+64 bytes from ams16s31-in-f14.1e100.net (172.217.19.206): icmp_seq=2 ttl=51 time=199 ms
+64 bytes from ams16s31-in-f14.1e100.net (172.217.19.206): icmp_seq=3 ttl=51 time=271 ms
+64 bytes from ams16s31-in-f14.1e100.net (172.217.19.206): icmp_seq=4 ttl=51 time=169 ms
+64 bytes from ams16s31-in-f14.1e100.net (172.217.19.206): icmp_seq=5 ttl=51 time=211 ms
+64 bytes from ams16s31-in-f14.1e100.net (172.217.19.206): icmp_seq=6 ttl=51 time=204 ms
+64 bytes from ams16s31-in-f14.1e100.net (172.217.19.206): icmp_seq=7 ttl=51 time=747 ms
+64 bytes from ams16s31-in-f14.1e100.net (172.217.19.206): icmp_seq=9 ttl=51 time=167 ms
+64 bytes from ams16s31-in-f14.1e100.net (172.217.19.206): icmp_seq=10 ttl=51 time=249 ms
 
-Ping statistics for 172.217.17.69:
-    Packets: Sent = 2, Received = 1, Lost = 1 (50% loss),
-Approximate round trip times in milli-seconds:
-    Minimum = 931ms, Maximum = 931ms, Average = 931ms
+--- google.com ping statistics ---
+10 packets transmitted, 9 received, 10% packet loss, time 9017ms
+rtt min/avg/max/mdev = 167.075/282.788/747.456/171.021 ms
